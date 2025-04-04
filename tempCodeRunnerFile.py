@@ -1,0 +1,1 @@
+    load_and_play(4000, learning=False)
