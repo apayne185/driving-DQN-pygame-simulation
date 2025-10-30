@@ -106,5 +106,18 @@ load_and_play("best", learning=False)
 
 
 ### Performance Analysis (Pyrace_performance_analysis.ipynb)
+Performance of the agents was evaluated using two  approaches:
 
+1. DQN Learning Curves
+* Tracked episodic rewards, the number of steps/episode during training.
+* To assess improvement over time, visualized averaged rewards and rewards per step trends.
+
+This shows how efficiently the agent learns to navigate the track, avoid collisions, and complete laps.
+
+2. Q-Table Policy Interpretation
+
+* For tabular Q-learning agents, aggregated Q-values across radar sensor states to determine any preferred actions.
+* Normalized and scaled aggregated values to produce a visual “policy fingerprint” showing which actions the agent favors based on obstacle direction/distance.
+
+Both analyses provided insight into both the overall learning progress and action selection behavior, helping compare DQN and QTable approaches (and guiding further improvements).
 
