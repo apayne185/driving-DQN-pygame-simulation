@@ -262,5 +262,6 @@ if __name__ == "__main__":
     MEMORY_SIZE = 10000
 
     
-    # simulate()                            #start with this
-    load_and_play("best", learning=True)      #plays the game, can continue training
+    # simulate()                            #start with this - to train
+    load_and_play("best", learning=True)      #plays the game, can continue training if True, otherwise simply runs trained model
+

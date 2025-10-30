@@ -27,7 +27,7 @@ The simulation environment is implemented as custom Gym environment (gym_race), 
 └── *.png                     # Racing environment visual assets
 ```
 
-
+<br>
 
 ## Environment Overview
 The Pyrace-v1 environment simulates a top-down 2D vehicle navigating a track using:
@@ -70,6 +70,7 @@ The agent is encouraged to move foward & pass the checkpoint (full lap around tr
 | Crash	-10000  | + distance traveled |
 | Lap complete |	+10000 bonus |
 
+----------
 
 ## Running the Code 
 
@@ -78,4 +79,32 @@ The agent is encouraged to move foward & pass the checkpoint (full lap around tr
 ```bash 
 pip install -r requirements.txt
 ```
+
+### Training Agent
+Within Pyrace_RL_QTable.py, change this line of code:
+
+``` python 
+#simulate()
+load_and_play("best", learning=True)
+```
+to: 
+
+``` python  
+simulate()
+# load_and_play("best", learning=True)
+```
+
+
+### Run Trained Agent 
+Run the load_and_play function (and turn training off) to run the previously (best) trained agent: 
+
+``` python 
+#simulate()
+load_and_play("best", learning=False) 
+```
+
+
+
+### Performance Analysis (Pyrace_performance_analysis.ipynb)
+
 
